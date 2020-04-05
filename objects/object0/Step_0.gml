@@ -13,6 +13,21 @@ up_release = keyboard_check_released(vk_up);
 #region Move State
 switch(state){
 	case player.moving:
+		//Change direction of sprite
+		if (xspeed != 0){
+			image_xscale = sign(xspeed);
+		}
+		//Check if moving left or right
+		if (right or left){
+			xspeed += (right - left) * acceleration;
+			xspeed = clamp(xspeed, -max_speed, max_speed);
+		}
+		else {
+			apply_friction(acceleration);
+		}
+		
+		move(o_solid);
+		
 	break;
 }
 #endregion
