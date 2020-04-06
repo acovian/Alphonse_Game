@@ -45,6 +45,28 @@ switch(state){
 		
 		move(o_solid);
 		
+		var falling = y - yprevious > 0;
+		var wasnt_wall = !position_meeting(x + grab_width * image_xscale, yprevious, o_solid);
+		var is_wall = position_meeting(x + grab_width * image_xscale, y, o_solid);
+		
+		if (falling and wasnt_wall and is_wall) {
+			xspeed = 0;
+			yspeed = 0;
+			
+			//Move against ledge
+			
+			while (!place_meeting(x + image_xscale, y, o_solid)) {
+				x += image_xscale;
+			}
+			
+			//Check vertical position
+			while (position_meeting(x + grab_width * image_xscale, y - 1, o_solid)){
+				y -= 1; 
+			}
+			
+			state = player.ledge_grab;
+		}
+		
 	break;
 }
 #endregion
@@ -52,6 +74,13 @@ switch(state){
 #region Ledge Grab State
 switch(state){
 	case player.ledge_grab:
+		if (down){
+			state = player.moving;
+		}
+		if (up){
+			state = player.moving;
+			yspeed = jump_height;
+		}
 	break;
 }
 #endregion
