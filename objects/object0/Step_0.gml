@@ -13,6 +13,23 @@ up_release = keyboard_check_released(vk_up);
 #region Move State
 switch(state){
 	case player.moving:
+	
+	//Check if player is on the ground.
+		if (!place_meeting(x, y+1, o_solid)) {
+			yspeed += gravity_acceleration;
+			//Player is in the air.
+			
+			if (up_release and yspeed < -6){
+				yspeed = -3;
+			}
+		}
+		else {
+			yspeed = 0;
+			
+			if (up) {
+				yspeed = jump_height;
+			}
+		}
 		//Change direction of sprite
 		if (xspeed != 0){
 			image_xscale = sign(xspeed);
