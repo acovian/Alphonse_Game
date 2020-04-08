@@ -2,10 +2,10 @@
     "id": "3f819f82-86f0-4199-b3ff-94c36cb346a3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object0",
+    "name": "oPlayer",
     "eventList": [
         {
-            "id": "662eac6e-69c9-4db8-91a2-24ade5660463",
+            "id": "2a62115e-7a38-4a3c-a061-fc5ee0d54620",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,7 +15,7 @@
             "m_owner": "3f819f82-86f0-4199-b3ff-94c36cb346a3"
         },
         {
-            "id": "b661710a-1a25-4f9f-9181-c7310da2d08c",
+            "id": "d034c853-d8dd-4731-916e-e8cc2b5d4ccf",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,

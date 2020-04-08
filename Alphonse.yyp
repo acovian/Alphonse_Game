@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "1a662912-2fe6-4260-9b15-b207a81b870b",
-            "Value": {
-                "id": "2d7dbef0-000b-4f48-87d7-eb4cbb19345a",
-                "resourcePath": "scripts\/apply_friction\/apply_friction.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "24374b9c-de2d-4e0c-b9b2-f935f4b5e8ca",
             "Value": {
                 "id": "448019d4-1953-4bf9-86ea-720c51f51f76",
@@ -66,7 +58,7 @@
             "Key": "3f819f82-86f0-4199-b3ff-94c36cb346a3",
             "Value": {
                 "id": "1f47544b-f369-4940-a7ba-1ad5d39115cf",
-                "resourcePath": "objects\/object0\/object0.yy",
+                "resourcePath": "objects\/oPlayer\/oPlayer.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -92,6 +84,14 @@
                 "id": "8eff4765-5920-402b-87e6-ea02e2be704a",
                 "resourcePath": "views\/64cfe79c-d3c5-42bb-b543-480ae85adfe9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6a8b7aba-3c3d-4f20-b1b6-6ad13227d230",
+            "Value": {
+                "id": "e9a861dd-9a8b-406f-8591-1d95fb776d41",
+                "resourcePath": "objects\/oBacteriophage\/oBacteriophage.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -231,17 +231,16 @@
             }
         },
         {
-            "Key": "f421b002-2795-4d79-8799-3aaf921e928c",
+            "Key": "fd3978df-6a10-467c-9fd7-c6be51400b40",
             "Value": {
-                "id": "fa01a33f-e68b-4844-a086-444a62e2b1fa",
-                "resourcePath": "scripts\/move\/move.yy",
-                "resourceType": "GMScript"
+                "id": "18291aa6-929e-4548-9cad-514944544ee6",
+                "resourcePath": "sprites\/Bacteriophage\/Bacteriophage.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
     "script_order": [
-        "1a662912-2fe6-4260-9b15-b207a81b870b",
-        "f421b002-2795-4d79-8799-3aaf921e928c"
+        
     ],
     "tutorial": ""
 }
