@@ -1,5 +1,9 @@
 /// @description  Create Variables
 
-v_speed = 0;
-h_speed = 0;
-hp = 2;
+/// @description Initialize The Bacteriophage
+enum bacteriophage {
+	move_right,
+	move_left
+}
+
+state = choose(bacteriophage.move_right, bacteriophage.move_left);

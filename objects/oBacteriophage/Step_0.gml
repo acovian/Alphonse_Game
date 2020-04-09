@@ -1,27 +1,31 @@
-/// @description 
 
-#region //Collision and Movement
+/// @description Execute the state
 
-	//Horizontal Collision
-	if (place_meeting(x+h_speed, y, o_solid))
-	{
-		while (!place_meeting(x + sign(h_speed), y, o_solid))
-		{
-			x = x + sign(h_speed);
-		}
-		h_speed = 0;
-	}
-	x = x + h_speed;
+switch (state) {
+	#region Move Right
+		case bacteriophage.move_right:
+			var wall_at_right = place_meeting(x + 1, y, o_solid);
+			var ledge_at_right = !position_meeting(bbox_right + 1, bbox_bottom + 1, o_solid);
+			if(wall_at_right or ledge_at_right) {
+				state = bacteriophage.move_left;
+			}
+			
+			image_xscale = 1;
+			x += 1;
+		break;
+	#endregion
 
-	//Vertical Collision
-	if (place_meeting(x, y + v_speed, o_solid))
-	{
-		while (!place_meeting(x, y + sign(v_speed), o_solid))
-		{
-			y = y + sign(v_speed);
-		}
-		v_speed = 0;
-	}
-	y = y + v_speed;
+	#region Move Left
 	
-#endregion
+		case bacteriophage.move_left:
+			var wall_at_left = place_meeting(x - 1, y, o_solid);
+			var ledge_at_left = !position_meeting(bbox_left - 1, bbox_bottom + 1, o_solid);
+			if(wall_at_left or ledge_at_left) {
+				state = bacteriophage.move_right;
+			}
+			
+			image_xscale = -1;
+			x -= 1;
+	
+	#endregion
+}
