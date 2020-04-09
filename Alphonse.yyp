@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "16643610-d606-404e-b30f-e892e4fd4186",
+            "Value": {
+                "id": "8b9e1209-e7f7-436e-b9f7-5b61ef684123",
+                "resourcePath": "sprites\/Bacteriophage_1\/Bacteriophage_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e7ff1aa-80cb-42dc-8f31-ab2c2a32840a",
             "Value": {
                 "id": "1ae9bc44-aeba-40f6-ba0b-e6ea5f91ee0b",
@@ -196,6 +204,14 @@
                 "id": "8acd5520-47c2-4563-9327-db68e7feb704",
                 "resourcePath": "views\/cd857239-8dfe-4275-808b-3ece01e95d22.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "da4b72d2-88e1-4454-b928-80c9aecda085",
+            "Value": {
+                "id": "d4156802-0bb1-479e-ad85-fe20c7e87ecb",
+                "resourcePath": "objects\/oBacteriophage_1\/oBacteriophage_1.yy",
+                "resourceType": "GMObject"
             }
         },
         {

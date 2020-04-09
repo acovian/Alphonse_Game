@@ -74,6 +74,12 @@ key_jump = keyboard_check_pressed(ord("W"));
 	
 #endregion
 
-#region Hurt state
+#region oHealth
+
+	if (place_meeting(x, y, oBacteriophage))
+	{
+		health -= 1;
+		//if health <= 0 instance_destroy();
+	}
 
 #endregion
