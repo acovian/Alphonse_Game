@@ -67,8 +67,19 @@ key_jump = keyboard_check_pressed(ord("W"));
    {
 		if(keyboard_check(vk_enter))
 		{
-			instance_destroy(oBacteriophage);
+			oBacteriophage.h_speed = direction;
+			//instance_destroy(oBacteriophage);
 		}
    }
 	
+#endregion
+
+#region oHealth
+
+	if (place_meeting(x, y, oBacteriophage))
+	{
+		health -= 1;
+		//if health <= 0 instance_destroy();
+	}
+
 #endregion

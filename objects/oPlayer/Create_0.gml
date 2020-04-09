@@ -1,5 +1,6 @@
 /// @description Setting Player Variables
 
+health = 10;
 h_speed = 0;
 v_speed = 0;
 grv = 0.3;
