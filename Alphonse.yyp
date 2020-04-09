@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "38d1c4df-855a-490a-9cfc-a1fe98e77ac4",
+            "Value": {
+                "id": "8af0fc30-a142-4b95-8369-b2b2ba1f2e2f",
+                "resourcePath": "scripts\/script0\/script0.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3977110c-b882-4ed8-9def-d421d42e5dda",
             "Value": {
                 "id": "17b0272c-d1a5-4f65-94fe-a23ad3b24f13",
@@ -255,6 +263,14 @@
             }
         },
         {
+            "Key": "f652de17-a58f-4ad2-8a45-4bcb5844550f",
+            "Value": {
+                "id": "08fb94ff-6edf-4634-8223-4644c9143282",
+                "resourcePath": "objects\/oBacteriophage_Parent\/oBacteriophage_Parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fd3978df-6a10-467c-9fd7-c6be51400b40",
             "Value": {
                 "id": "18291aa6-929e-4548-9cad-514944544ee6",
@@ -264,7 +280,7 @@
         }
     ],
     "script_order": [
-        
+        "38d1c4df-855a-490a-9cfc-a1fe98e77ac4"
     ],
     "tutorial": ""
 }
