@@ -23,5 +23,6 @@ if (above_enemy and falling) {
 	//audio_play_sound(a_step, 6, false);
 }
 else {
-	take_damage();
+	v_speed = -6;
+	h_speed = (sign(x - other.x) * 8);
 }
