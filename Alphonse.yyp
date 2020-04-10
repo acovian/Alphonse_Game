@@ -74,7 +74,7 @@
             "Key": "38d1c4df-855a-490a-9cfc-a1fe98e77ac4",
             "Value": {
                 "id": "8af0fc30-a142-4b95-8369-b2b2ba1f2e2f",
-                "resourcePath": "scripts\/script0\/script0.yy",
+                "resourcePath": "scripts\/take_damage\/take_damage.yy",
                 "resourceType": "GMScript"
             }
         },

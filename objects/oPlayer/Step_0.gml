@@ -38,7 +38,7 @@ key_jump = keyboard_check_pressed(ord("W"));
 #region //Collision and Movement
 
 	//Horizontal Collision
-	if (place_meeting(x+h_speed, y, o_solid))
+	if (place_meeting(x + h_speed, y, o_solid))
 	{
 		while (!place_meeting(x + sign(h_speed), y, o_solid))
 		{
@@ -63,9 +63,9 @@ key_jump = keyboard_check_pressed(ord("W"));
 
 #region Destroy Enemy
 	
-	if distance_to_object(oBacteriophage) < 25
+	if (distance_to_object(oBacteriophage) < 25)
    {
-		if(keyboard_check(vk_enter))
+		if (keyboard_check(vk_enter))
 		{
 			oBacteriophage.h_speed = direction;
 			//instance_destroy(oBacteriophage);
@@ -74,12 +74,22 @@ key_jump = keyboard_check_pressed(ord("W"));
 	
 #endregion
 
-#region oHealth
+#region Hurt State
+	
+	//if (place_meeting(x, y + 1, o_solid))
+	//{
+		//v_speed += gravity_acceleration;
+	//}
+	//else {
+		//v_speed = 0;
+	//}
+	
+	//"2"
 
-	if (place_meeting(x, y, oBacteriophage))
-	{
-		health -= 1;
+	//if (place_meeting(x, y, oBacteriophage))
+	//{
+		//health -= 1;
 		//if health <= 0 instance_destroy();
-	}
+	//}
 
 #endregion

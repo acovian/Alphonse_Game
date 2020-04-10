@@ -23,5 +23,5 @@ if (above_enemy and falling) {
 	//audio_play_sound(a_step, 6, false);
 }
 else {
-	//take_damage();
+	take_damage();
 }
